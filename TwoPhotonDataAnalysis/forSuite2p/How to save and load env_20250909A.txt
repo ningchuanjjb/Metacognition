@@ -1,0 +1,8 @@
+Save of Environmental Configuration Information: 
+▶Run `conda activate [envName]`
+▶Run `conda env export --no-builds > [envName].yml`
+
+Load of Environmental Configuration Information: 
+▶Enter the `[envName].yml` file directory. 
+▶Run `conda env create -f [envName].yml` or `conda env create -n [envNameDIY] -f [envName].yml` 
+▶Find the environment directory, import and overwrite the DIY files.
