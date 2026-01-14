@@ -24,9 +24,9 @@ The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline
   forSuite2p: my pipeline for source extraction with Suite2p
   my2pScripts: comprehensive neuronal data analyses
 
-In my2pScripts, these files corresponds to example neurons, related to Figure 1G-1I:
-    "test_temp_plot_locTuning_newFigure_singleNeuron.m";
-    "test_temp_plot_metaTuning_newFigure_singleNeuron.m";
+    In my2pScripts, these files corresponds to example neurons, related to Figure 1G-1I:
+        "test_temp_plot_locTuning_newFigure_singleNeuron.m";
+        "test_temp_plot_metaTuning_newFigure_singleNeuron.m";
 
 In my2pScripts, these files corresponds to WM neural decoder, related to Figure 2:
     "stepD3_train123_test123.m";
