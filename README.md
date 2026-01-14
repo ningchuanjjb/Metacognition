@@ -18,11 +18,11 @@ The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline
 
    * This folder does not contain the complete neuronal dataset required to run the code. The full dataset is available via a dataset-specific Zenodo link. This folder only includes data from a single FOV named as "demoData.mat" (from monkey D FOV 8, with two consecutive sessions merged). If the variable if_loadDemoData is set to 1, most of the results in "my2pScripts" can still be plotted.
 
-   - NoRMCorre: my pipeline for motion correction with NoRMCorre
+    NoRMCorre: my pipeline for motion correction with NoRMCorre
 
-   - forSuite2p: my pipeline for source extraction with Suite2p
+    forSuite2p: my pipeline for source extraction with Suite2p
 
-   - my2pScripts: comprehensive neuronal data analyses
+    my2pScripts: comprehensive neuronal data analyses
 
    * In my2pScripts, these files corresponds to example neurons, related to Figure 1G-1I:  
       "test_temp_plot_locTuning_newFigure_singleNeuron.m";  
