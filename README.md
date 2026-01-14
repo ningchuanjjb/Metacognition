@@ -22,12 +22,6 @@ The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline
     forSuite2p: my pipeline for source extraction with Suite2p
     my2pScripts: comprehensive neuronal data analyses
 
-        In my2pScripts, these files corresponds to conduct multi-FOVs analyses pipeline:
-            "stepZ1_summaryMultiFov.m";
-
-        In my2pScripts, these files corresponds to plot multi-FOVs analyses results from above:
-            "test_temp_plot_mulFOV_singleNeuron.m";
-
         In my2pScripts, these files corresponds to example neurons, related to Figure 1G-1I:
             "test_temp_plot_locTuning_newFigure_singleNeuron.m";
             "test_temp_plot_metaTuning_newFigure_singleNeuron.m";
@@ -53,3 +47,8 @@ The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline
             "test_temp_plot_mulFOV_singleNeuron.m" (multi-FOVs);
 
 
+        In my2pScripts, these files corresponds to conduct multi-FOVs analyses pipeline:
+            "stepZ1_summaryMultiFov.m";
+
+        In my2pScripts, these files corresponds to plot multi-FOVs analyses results from above:
+            "test_temp_plot_mulFOV_singleNeuron.m";
