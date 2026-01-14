@@ -2,6 +2,8 @@
 Codes for "Macaque Prefrontal Cortex Integrates Multiple Components for Metacognitive Judgments of Working Memory"
 
 
+The full dataset is available on Zenodo. If you have any questions, please feel free to open an issue or contact the authors via email.
+
 
 The "BehavioralAnalyses" folder contains behavioral analyses corresponding to Figure 1 and pupil size analyses corresponding to Figure 5.
 
