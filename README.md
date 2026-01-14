@@ -14,7 +14,7 @@ The "BehavioralAnalyses" folder contains behavioral analyses corresponding to Fi
 
 
 The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
-    This folder does not contain neuronal data to run the code.
+    This folder does not contain the neuronal data required to run the code; the neuronal data are available via a dataset-specific Zenodo link. 
 
     NoRMCorre: my pipeline for motion correction with NoRMCorre
     forSuite2p: my pipeline for source extraction with Suite2p
