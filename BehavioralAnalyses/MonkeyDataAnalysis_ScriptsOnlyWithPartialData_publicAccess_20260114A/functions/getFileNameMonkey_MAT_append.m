@@ -1,0 +1,24 @@
+function [last_fileName_fig, last_shortfileName_fig] = getFileNameMonkey_MAT_append(subject_name, currentFigName, monkey_name)
+% to generate a unique file name for saving figure
+
+temp_fileCount = 1;
+
+nameCell_fig = cell(1,4);
+nameCell_fig{1} = 'C:\ASDROOT\STUDY\MonkeyDataAnalysis\Data\';
+nameCell_fig{2} = ['from', subject_name{1}, 'to', subject_name{end}, '_', monkey_name, '_'];
+nameCell_fig{3} = currentFigName;
+nameCell_fig{4} = num2str(temp_fileCount);
+nameCell_fig{5} = '.mat';
+fileName_fig = [nameCell_fig{1} nameCell_fig{2} nameCell_fig{3} nameCell_fig{4} nameCell_fig{5}];
+shortfileName_fig = [nameCell_fig{2} nameCell_fig{3} nameCell_fig{4} nameCell_fig{5}];
+
+while exist(fileName_fig , 'file') == 2
+    last_fileName_fig = fileName_fig;
+    last_shortfileName_fig = shortfileName_fig;
+    temp_fileCount = temp_fileCount + 1;
+    nameCell_fig{4} = num2str(temp_fileCount);    
+    
+    fileName_fig = [nameCell_fig{1} nameCell_fig{2} nameCell_fig{3} nameCell_fig{4} nameCell_fig{5}];
+    shortfileName_fig = [nameCell_fig{2} nameCell_fig{3} nameCell_fig{4} nameCell_fig{5}];
+end
+end
