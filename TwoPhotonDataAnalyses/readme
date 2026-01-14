@@ -1,4 +1,4 @@
-The "TwoPhotonDataAnalysis" file includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
+The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
 
     NoRMCorre: my pipeline for motion correction with NoRMCorre
     forSuite2p: my pipeline for source extraction with Suite2p

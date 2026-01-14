@@ -3,7 +3,8 @@ Codes for "Macaque Prefrontal Cortex Integrates Multiple Components for Metacogn
 
 
 
-The "BehavioralAnalyses" file contains behavioral analyses corresponding to Figure 1 and pupil size analyses corresponding to Figure 5.
+The "BehavioralAnalyses" folder contains behavioral analyses corresponding to Figure 1 and pupil size analyses corresponding to Figure 5.
+    This file already contains some demo behaviral data to run the code.
 
     run "test_temp_plot_metaEvidence.m" for reproducing behavioral analyses, related to Figure 1.
 
@@ -12,7 +13,8 @@ The "BehavioralAnalyses" file contains behavioral analyses corresponding to Figu
 
 
 
-The "TwoPhotonDataAnalysis" file includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
+The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
+    This folder does not contain neuronal data to run the code.
 
     NoRMCorre: my pipeline for motion correction with NoRMCorre
     forSuite2p: my pipeline for source extraction with Suite2p
