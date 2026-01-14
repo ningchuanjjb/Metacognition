@@ -1,6 +1,6 @@
 % Chuan's 5th script (20251214)
 % This script: One part of 'stepD3_train123_test123.m'.
-close all
+% close all
 
 if_plot = 1;
 

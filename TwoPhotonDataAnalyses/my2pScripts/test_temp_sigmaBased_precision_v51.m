@@ -1,7 +1,7 @@
 % Chuan's 6th script (20251214)
 % This script: One part of 'stepD3_train123_test123.m'.
 %% Initialization
-close all
+% close all
 
 targetPATH = 'C:\ASDROOT\STUDY\TwoPhotonDataAnalysis\my2pScripts';
 cd(targetPATH)

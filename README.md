@@ -16,7 +16,7 @@ The "BehavioralAnalyses" folder contains behavioral analyses corresponding to Fi
 
 The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline (motion correction with NoRMCorre and source extraction with Suite2p) and comprehensive neuronal data analyses.
 
-    This folder does not contain the neuronal data required to run the code; the neuronal data are available via a dataset-specific Zenodo link. 
+    This folder does not contain the complete neuronal dataset required to run the code. The full dataset is available via a dataset-specific Zenodo link. This folder only includes data from a single FOV named as "demoData.mat" (from monkey D FOV 8, with two consecutive sessions merged). If the variable if_loadDemoData is set to 1, most of the results in "my2pScripts" can still be plotted.
 
     NoRMCorre: my pipeline for motion correction with NoRMCorre
     forSuite2p: my pipeline for source extraction with Suite2p
@@ -52,3 +52,7 @@ The "TwoPhotonDataAnalyses" folder includes my two-photon preprocessing pipeline
 
         In my2pScripts, these files corresponds to plot multi-FOVs analyses results from above:
             "test_temp_plot_mulFOV_singleNeuron.m";
+
+        In my2pScripts, these files contain code to run monkey behavioral experiments by PsychtoolBoox in Matlab:
+                    "trainDing_Step15_eye_for113Record_niMarker_56.m";
+                    "trainZelku_Step15_eye_for113Record_niMarker_84.m";            
