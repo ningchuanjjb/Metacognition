@@ -5,7 +5,8 @@
 
 close all
 
-if_loadDemoData = if_loadDemoData;
+% if_loadDemoData = if_loadDemoData;
+if_loadDemoData = 0;
 
 % if_tuning_location0_precision1 = 0;
 if_tuning_location0_precision1 = if_tuning_location0_precision1;%if_tuning_location0_precision1
@@ -293,7 +294,8 @@ cellType;
 %%
 temp_range = FOVAllCellRange_multiFOV(temp_currentSessionIndex,1):FOVAllCellRange_multiFOV(temp_currentSessionIndex,2);
 if if_loadDemoData == 0
-    cellIndex_suite2p = selevtivity_multiFOV.cellIndex_suite2p_multiFOV(temp_range);
+    %cellIndex_suite2p = selevtivity_multiFOV.cellIndex_suite2p_multiFOV(temp_range);
+    cellIndex_suite2p = cellIndex_suite2p_multiFOV(temp_range);    
 elseif if_loadDemoData == 1
     cellIndex_suite2p = cellIndex_suite2p_multiFOV(temp_range);
 end
@@ -406,16 +408,27 @@ fprintf('temp_currentSession = %s.\n',temp_currentSession);
 if if_loadDemoData == 0
     output_shortPath = 'D:\twoPhotonData_motionCorrected';
     temp_currentSession_path = [output_shortPath '\' temp_currentSession];
-    temp_if_max0_min1 = 0;
-    output_path = autoGetFileName_general('Result', temp_currentSession_path,temp_if_max0_min1);
-    path_plane = [output_path,'\plane0'];
+    
+    if false
+        temp_if_max0_min1 = 0;
+        output_path = autoGetFileName_general('Result', temp_currentSession_path,temp_if_max0_min1);
+        path_plane = [output_path,'\plane0'];
+    end
     
     temp_if_max0_min1 = 0;
     %template_path = autoGetFileName_general('template*.tif', output_path,temp_if_max0_min1);
-    template_path = autoGetFileName_general('maxProjection*.tif', output_path,temp_if_max0_min1);
+    
+    
+    %template_path = autoGetFileName_general('maxProjection*.tif', output_path,temp_if_max0_min1);    
+    
+    temp_path2 = [output_shortPath,'\spatialOrganization\',temp_currentSession];    
+    template_path = autoGetFileName_general('maxProjection*.tif', temp_path2,temp_if_max0_min1);
+
+    
     template = double(loadtiff(template_path));
     
-    if if_load== 1
+    %if if_load== 1
+    if false
         fileName_Fall = 'Fall.mat';
         fileName_iscell = 'iscell.npy';
         fullFileName_Fall = [path_plane,'\',fileName_Fall];
@@ -425,6 +438,21 @@ if if_loadDemoData == 0
         
         s = load(fullFileName_Fall,'stat');
         roi_stats_raw = s.stat;
+        temp_cellIndex = find(iscell(:,1)==1);
+        roi_stats = roi_stats_raw(temp_cellIndex);
+    end
+    
+    
+    if if_load== 1
+        temp_path1 = [output_shortPath,'\spatialOrganization\',temp_currentSession,'\plane0'];        
+        fullFileName_iscell = [temp_path1,'\',fileName_iscell];
+        
+        iscell = readNPY(fullFileName_iscell);
+        
+        temp_fileName_roi_stats = [temp_path1,'\','roi_stats_raw.mat'];
+        s = load(temp_fileName_roi_stats,'roi_stats_raw');
+        roi_stats_raw = s.roi_stats_raw;
+        
         temp_cellIndex = find(iscell(:,1)==1);
         roi_stats = roi_stats_raw(temp_cellIndex);
     end
